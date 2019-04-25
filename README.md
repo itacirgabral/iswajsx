@@ -1,5 +1,7 @@
 # ISWA.jsx
 
+![reactiontime](./reactiontime.png)
+
 - [ISWA](http://www.signwriting.org/archive/docs7/sw0636_SignWriting_Alphabet_Manual_2010.pdf)
   is a set of graphemes used on sign languages to write
 - [original bundle](http://www.movementwriting.org/symbolbank/downloads/ISWA2010/ISWA2010_Symbols_SVG.zip)
