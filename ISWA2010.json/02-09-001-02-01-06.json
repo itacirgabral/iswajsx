@@ -1,0 +1,1 @@
+{"name":"svg","type":"element","value":"","attributes":{"xmlns":"http://www.w3.org/2000/svg","version":"1.0","width":"26","height":"22"},"children":[{"name":"path","type":"element","value":"","attributes":{"d":"M10 8h16l-8-8-8 8zM17 8v6a4 4 0 0 1-4 4H0v4h12a7 7 0 0 0 7-7V8h-2z"},"children":[]}]}

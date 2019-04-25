@@ -1,0 +1,33 @@
+{
+  "name": "iswajsx",
+  "version": "0.0.2",
+  "description": "international sign writing alphabet in jsx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "itacir gabral",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-svgo": "^2.1.1",
+    "svgson": "^3.1.0",
+    "through2": "^3.0.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itacirgabral/iswajsx.git"
+  },
+  "keywords": [
+    "react",
+    "jsx",
+    "signwriting",
+    "iswa"
+  ],
+  "bugs": {
+    "url": "https://github.com/itacirgabral/iswajsx/issues"
+  },
+  "homepage": "https://github.com/itacirgabral/iswajsx#readme"
+}
