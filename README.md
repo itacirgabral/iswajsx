@@ -10,41 +10,26 @@
 
 - [x] [svg optimization](https://github.com/svg/svgo)
 - [x] [svg to json](https://github.com/elrumordelaluz/svgson)
-- [ ] json to ast
-- [ ] ast to jsx
+- [ ] [svgr](https://www.smooth-code.com/open-source/svgr/docs/options/)
 
-## 01-01-001-01-01 example
-
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" version="1.0"><path d="M13 0h2v15h-2zM0 15h15v15H0z"/><path fill="#fff" d="M2 17h11v11H2z"/></svg>
-
-```json
-{
-  "name": "svg",
-  "type": "element",
-  "value": "",
-  "attributes": {
-    "xmlns": "http://www.w3.org/2000/svg",
-    "width": "15",
-    "height": "30",
-    "version": "1.0"
-  },
-  "children": [
-    {
-      "name": "path",
-      "type": "element",
-      "value": "",
-      "attributes": { "d": "M13 0h2v15h-2zM0 15h15v15H0z" },
-      "children": []
-    },
-    {
-      "name": "path",
-      "type": "element",
-      "value": "",
-      "attributes": { "fill": "#fff", "d": "M2 17h11v11H2z" },
-      "children": []
-    }
-  ]
-}
+```
+import svgr from '@svgr/core'
+const svgCode = `
+<svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect x="10" y="10" height="100" width="100"
+    style="stroke:#ff0000; fill: #0000ff"/>
+</svg>
+`
+svgr(svgCode, { icon: true }, { componentName: 'MyComponent' }).then(jsCode => {
+  console.log(jsCode)
+  })
 ```
 
-https://astexplorer.net/
+## 01-01-001-01-01 example
+```html
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="30" version="1.0">
+  <path d="M13 0h2v15h-2zM0 15h15v15H0z"/>
+  <path fill="#fff" d="M2 17h11v11H2z"/>
+</svg>
+```

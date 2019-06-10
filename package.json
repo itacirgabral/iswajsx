@@ -9,6 +9,7 @@
   "author": "itacir gabral",
   "license": "ISC",
   "devDependencies": {
+    "@svgr/core": "^4.3.0",
     "gulp": "^4.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-svgo": "^2.1.1",
