@@ -40,7 +40,7 @@ const exportListRegular = fileListRegular.map(arr => {
   const file = arr[arr.length - 1].split('.')[0]
   const symbol = symbolkey.find(el => el[0].includes(file))[1]
 
-  return `  s${symbol}`
+  return `  S${symbol}`
 }).join(',\n')
 
 fs.writeFileSync('./index.js', `${importListRegular}
