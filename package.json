@@ -4,17 +4,16 @@
   "description": "international sign writing alphabet in jsx",
   "main": "index.js",
   "scripts": {
+    "task:clofol": "node --es-module-specifier-resolution=node ./task/cloneFolder.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "itacir gabral",
-  "license": "ISC",
+  "license": "OFL-1.1",
   "devDependencies": {
+    "@iswa/svg": "^1.0.4",
+    "@iswa/symbolkey": "^1.0.0",
     "@svgr/core": "^4.3.3",
-    "gulp": "^4.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-svgo": "^2.1.1",
-    "svgson": "^3.1.0",
-    "through2": "^3.0.1"
+    "shelljs": "^0.8.4"
   },
   "dependencies": {},
   "repository": {
