@@ -3,8 +3,10 @@
   "version": "0.0.2",
   "description": "international sign writing alphabet in jsx",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "task:clofol": "node --es-module-specifier-resolution=node ./task/cloneFolder.js",
+    "task:jsxer": "node --es-module-specifier-resolution=node ./task/jsxer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "itacir gabral",
@@ -13,7 +15,16 @@
     "@iswa/svg": "^1.0.4",
     "@iswa/symbolkey": "^1.0.0",
     "@svgr/core": "^4.3.3",
+    "@svgr/plugin-prettier": "^5.4.0",
+    "@svgr/plugin-svgo": "^5.4.0",
     "shelljs": "^0.8.4"
+  },
+  "svgr": {
+    "icon": true,
+    "svgo": true,
+    "plugins": [
+      "@svgr/plugin-svgo"
+    ]
   },
   "dependencies": {},
   "repository": {

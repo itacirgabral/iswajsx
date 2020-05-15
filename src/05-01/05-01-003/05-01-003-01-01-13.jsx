@@ -1,0 +1,10 @@
+import React from "react";
+
+const SvgComponent = (props) => (
+  <svg width="1em" height="1em" {...props}>
+    <path d="M54 5H12V1h42v4zM5 10l5-5-.719-.719L5 8.563.719 4.28 0 5l5 5z" />
+    <path d="M7 6H6V0h1v6zM4 6H3V0h1v6z" />
+  </svg>
+);
+
+export default SvgComponent;
