@@ -2,6 +2,23 @@
 
 ![reactiontime](./reactiontime.png)
 
+# Install
+```
+npm install -S @iswa/jsx
+```
+
+# CRA Example
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import S10000 from '@iswa/jsx'
+
+ReactDOM.render(
+    <S10000 />,
+  document.getElementById('root')
+);
+```
+
 # License
 Symbols in the Sutton Movement Writing system, including the International SignWriting Alphabet (ISWA) are free to use under the SIL Open Font License ([OFL](https://opensource.org/licenses/OFL-1.1)).
 

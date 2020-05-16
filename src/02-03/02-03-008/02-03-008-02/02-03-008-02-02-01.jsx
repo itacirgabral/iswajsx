@@ -1,7 +1,7 @@
 import React from "react";
 
 const SvgComponent = (props) => (
-  <svg width="1em" height="1em" {...props}>
+  <svg width={23} height={27} {...props}>
     <path d="M8 0L0 8h16L8 0zm0 1.438L13.563 7H2.437L8 1.437zM4 8v19h19v-2H6V8H4z" />
     <path d="M10 8v13h13v-2H12V8h-2z" />
     <path

@@ -29,7 +29,6 @@ fileList.forEach(pathArr => {
   fs.readFile(path, (err, file) => {
     if (!err) {
       svgr.default(file, {
-        "icon": true,
         "plugins": ["@svgr/plugin-svgo", "@svgr/plugin-jsx", "@svgr/plugin-prettier"]
       })
         .then(jsx => {
