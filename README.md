@@ -11,7 +11,7 @@ npm install -S @iswa/jsx
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
-import S10000 from '@iswa/jsx'
+import { S10000 } from '@iswa/jsx'
 
 ReactDOM.render(
     <S10000 />,
