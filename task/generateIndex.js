@@ -33,7 +33,7 @@ const importListRegular = fileListRegular.map(arr => {
     `${file}.js`
   ].join('/')
 
-  return `import s${symbol} from '${path}'`
+  return `import S${symbol} from '${path}'`
 }).join('\n')
 
 const exportListRegular = fileListRegular.map(arr => {
