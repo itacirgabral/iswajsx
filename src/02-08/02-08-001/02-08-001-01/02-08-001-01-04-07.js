@@ -1,0 +1,14 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import React from "react";
+
+const SvgComponent = props => /*#__PURE__*/React.createElement("svg", _extends({
+  width: 18,
+  height: 13
+}, props), /*#__PURE__*/React.createElement("path", {
+  d: "M18 2.1L8.1 12H18V2.1z"
+}), /*#__PURE__*/React.createElement("path", {
+  d: "M1.03 2.1c2.733-2.733 7.482-2.417 10.606.708 1.054 1.054 4.243 1.414 4.243 1.414l-5.657 5.657s-.36-3.189-1.414-4.243C6.464 3.293 3.615 2.343 2.444 3.515.882 5.077 2.148 8.875 5.272 12l-.707.707C.66 8.802-.923 4.053 1.029 2.101z"
+}));
+
+export default SvgComponent;

@@ -30,7 +30,7 @@ const importListRegular = fileListRegular.map(arr => {
     '.',
     'src',
     ...arr.slice(0, arr.length - 1),
-    `${file}.jsx`
+    `${file}.js`
   ].join('/')
 
   return `import S${symbol} from '${path}'`

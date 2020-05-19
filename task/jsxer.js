@@ -1,12 +1,14 @@
 import fs from 'fs'
 import iswasvg from '@iswa/svg'
-import symbolkey from '@iswa/symbolkey'
 import svgr from '@svgr/core'
+import babel from '@babel/core'
 
 const iswaPath = Object.keys(iswasvg)[0]
 const iswaTree = iswasvg[iswaPath]
 
 const fileList = []
+
+const babelTransConf = { plugins: ['@babel/plugin-transform-react-jsx'] }
 
 const recursiveList = (tree, path = []) => {
   const entries = Object.entries(tree)
@@ -24,7 +26,7 @@ recursiveList(iswaTree)
 
 fileList.forEach(pathArr => {
   const path = [iswaPath, ...pathArr].join('/')
-  const newNameExtension = `${pathArr[pathArr.length - 1].split('.')[0]}.jsx`
+  const newNameExtension = `${pathArr[pathArr.length - 1].split('.')[0]}.js`
   const newPath = ['./src', ...pathArr.slice(0, pathArr.length -1), newNameExtension].join('/')
   fs.readFile(path, (err, file) => {
     if (!err) {
@@ -32,7 +34,8 @@ fileList.forEach(pathArr => {
         "plugins": ["@svgr/plugin-svgo", "@svgr/plugin-jsx", "@svgr/plugin-prettier"]
       })
         .then(jsx => {
-          fs.writeFile(newPath, jsx, err => {
+          const compiledJsx = babel.transform(jsx, babelTransConf).code
+          fs.writeFile(newPath, compiledJsx, err => {
             if (err) {
               console.error(err)
             }
